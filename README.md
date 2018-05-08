@@ -4,7 +4,7 @@
 ### Hosted at http://remoteacademy.phys.rpi.edu/
 ### in collaboration with RPI DOTCIO and Office of Undergraduate Education
 Originally created by: *Miles Konstantin, Osvaldo Rosado and Keaton Brandt* <br>
-Version 2 by: *Karl Nasrallah, Cole Baxter, Zoran Lalvani, Harrison Lee, Richi Young*
+Version 2 by: *Karl Nasrallah, Cole Baxter, Zoran Lalvani, Harrison Lee, Richi Young* <br>
 Currently Maintained by *Andrew Leaf*
 ***
 
@@ -30,7 +30,7 @@ As of now, there isn't a MongoDB database running on a server. This means that, 
 functionality, an instance of MongoDB must be running locally. To set it up, make sure you
 have MongoDB installed on your computer. To run it, cd to the bin folder and run the command,
 `mongod.exe`
-The bin directory should be somewhere like C:\Program Files\MongoDB\Server\3.6\bin on windows.
+The bin directory should be somewhere like C:\Program Files\MongoDB\Server\3.6\bin on Windows.
 
 Labs can be added through the Remote Laboratory but admin users must be added manually. I'd
 recommend using Robomongo as a GUI interface with the database. Inserting a user should follow
@@ -76,9 +76,3 @@ allows for much more versatile data storage without sacrificing performance.
 * **Angular.js 1.x:** Google's answer to web app development, this Javascript framework
 enables us to write structured, reusable code. Angular has directives, which represent HTML
 components, and services, which represent singleton libraries and controllers.
-
-https://www.npmjs.com/package/cas-authentication
-https://github.com/kylepixel/cas-authentication
-https://stackoverflow.com/questions/44334172/how-to-implement-cas-authentication-for-rest-api-built-on-express
-
-https://github.com/UniconLabs/node-with-cas
