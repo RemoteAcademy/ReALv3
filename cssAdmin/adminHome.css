@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Admin main page*/
 body {
 	background: #2b423a;
@@ -100,4 +101,108 @@ th, td {
 
 .all {
 	background-color: #2b423a;
+=======
+/* Admin main page*/
+body {
+	background: #2b423a;
+	overflow: auto;
+	
+	margin-left:auto;
+    margin-right:auto;
+}
+
+.content{
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #2b423a;
+}
+
+table, th, td {
+	text-align: left;
+	background-color: #fff6e2;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+	padding-left: 10%;
+}
+
+/* Just for the log out box */
+#login{
+	background: #fff6e2;
+	border: 2px groove #000000;
+    color: #000000;
+    padding: 5px;
+
+    position: fixed;
+    left: 90%;
+}
+
+#classHeader{ /* Class as in the physics class */
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.leftList{
+
+	float: left;
+
+	background-color: #fff6e2;
+
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    color: #000000;
+
+	position: relative;
+	margin-left: 10px;
+	margin-top: 30px;
+	padding: 5px 20px 5px 20px;
+
+	width: 70%;
+	height: 90%;
+}
+
+.rightList{
+
+	float: right;
+
+	background-color: #fff6e2;
+
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    color: #000000;
+
+	position: relative;
+	margin-left: 10px;
+	margin-top: 30px;
+	padding: 5px 20px 5px 20px;
+
+	width: 15%;
+}
+
+.list-horizontal li {
+	display:inline-block;
+}
+.list-horizontal li:before {
+	content: '\00a0\2022\00a0\00a0';
+	color:#999;
+	color:rgba(0,0,0,0.5);
+	font-size:11px;
+}
+.list-horizontal li:first-child:before {
+	content: '';
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.all {
+	background-color: #2b423a;
+>>>>>>> 8692799d4435c45805bff9424c1b948ac3a76aea
 }

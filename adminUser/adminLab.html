@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html ng-app="AdminApp">
 <head>
@@ -71,4 +72,79 @@
 	</div>
 
 </body>
+=======
+<!DOCTYPE html>
+<html ng-app="AdminApp">
+<head>
+
+	<title> Remote Academy Laboratory Experiment</title>
+	
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+	<!-- Angular Material Library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+
+	<!--sockets-->
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+    <!-- Gets style sheets; the first one is for bootstrapper -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">
+		
+	<!--own css and js-->
+	<link href='/cssAdmin/lab.css' rel='stylesheet'>
+	<script src="../js/admin.js"></script>
+
+
+</head>
+<body ng-controller="lab">
+
+    <!-- The header at the top of the page showing title. -->
+    <div class = "navbar navbar navbar-fixed-top", id = "largeHeader">
+        {{title}}
+    </div>
+
+	<div id = "row">
+		<div class = "col-md-8">
+			<!--instructions header-->
+			<h3> Instructions </h3>
+			<div class = "CentralTextBox", id = "instructions">
+				<b> Procedure: </b>
+				<!--list instructions-->
+                <ol>
+                    <li ng-repeat="instruct in instructions">{{instruct}}</li>
+                </ol>
+
+			</div>
+
+			<center> <!-- The button for finishing the experiment -->
+			<button type="button" class="btn btn-lg btn-default"> Run Experiment </button>
+			</center>
+
+		</div>
+		
+		<div class = "col-md-4"> <!-- The right column: focused on the remote lab/data -->
+			<h3> Imagination powered video feed </h3> <!-- For the user to see whats going on -->
+			<div class = "rightSideBox", id = "videoFeed">
+			</div>
+
+
+			<h3> Data Collected </h3> <!-- The student will be using the data we collected.-->
+			<div class = "rightSideBox">
+			</div>
+
+		</div>
+	</div>
+
+</body>
+>>>>>>> 8692799d4435c45805bff9424c1b948ac3a76aea
 </html>

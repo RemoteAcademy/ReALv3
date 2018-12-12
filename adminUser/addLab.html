@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html ng-app="AdminApp">
 	<head>
@@ -59,3 +60,66 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html ng-app="AdminApp">
+	<head>
+
+		<title> Remote Academy Laboratory </title>
+
+		<!-- Angular Material requires Angular.js Libraries -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	
+		<!-- Angular Material Library -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+		<!-- Angular Material style sheet -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+
+		<!--sockets-->
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+
+		<!--own css and js-->
+		<link href='../cssAdmin/adminHome.css' rel='stylesheet'>
+		<script src="../js/admin.js"></script>
+	</head>
+<body ng-controller="createLab">
+
+	<!--keep everything in the middle of the page-->
+	<div class="content">
+
+		<!--logout button-->
+		<div id = "login">
+				<a href=/logout>Logout</a>
+		</div>
+
+		<!--left justified-->-->
+  		<div class="leftList">
+			<h1>Create a Lab</h1>
+			<span>Title</span>
+
+			<!--title input area-->
+			<textarea ng-model="title" rows="1" cols="67"></textarea>
+			<br/>
+			<!--step input area-->
+			<div ng-repeat="i in steps track by $index">
+				<span>{{$index + 1}}.</span>
+				<textarea ng-model="steps[$index]" rows="1" cols="67"></textarea>
+			</div>
+
+			<!--add, remove, and submit buttons-->
+			<button ng-click="addStep()">Add Step</button>
+			<button ng-click="remStep()">Remove Step</button>
+			<br/>
+			<button ng-click="submit()">Submit</button>
+
+		</div>
+	</div>
+
+</body>
+</html>
+>>>>>>> 8692799d4435c45805bff9424c1b948ac3a76aea

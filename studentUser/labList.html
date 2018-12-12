@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html ng-app="studentApp">
 <head>
@@ -39,3 +40,46 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html ng-app="studentApp">
+<head>
+
+	<title> Remote Academy Laboratory </title>
+
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
+	<!--sockets-->
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+	<!-- Gets style sheets; the first one is for bootstrapper -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+		crossorigin="anonymous">-->
+
+	<!--our css and js-->
+	<link href='../css/labList.css' rel='stylesheet'>
+	<script src="../js/student.js"></script>
+
+</head>
+<body ng-controller="home">
+	<!--logout button-->
+	<div id = "login">
+			<a href=/logout>Logout</a>
+	</div>
+
+	<!--list visibel labs-->
+	<div class = "ExperimentsList">
+		<div id = 'classHeader'>Remote Academy Labs</div>
+		<ol>
+			<li ng-repeat="title in titles track by $index">
+				<a href="#" ng-click="goToLab(ids[$index])">{{title}}</a>
+			</li>
+		</ol>
+	</div>
+
+</body>
+</html>
+>>>>>>> 8692799d4435c45805bff9424c1b948ac3a76aea
