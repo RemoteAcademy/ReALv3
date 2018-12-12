@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="AdminApp">
+<head>
+
+	<title> Remote Academy Laboratory </title>
+
+	<!-- Angular Material requires Angular.js Libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+	<!-- Angular Material Library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.js"></script>
+
+	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+
+	<!--sockets-->
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+	<!--own html and css-->
+	<link href='../cssAdmin/adminHome.css' rel='stylesheet'>
+	<script src="../js/admin.js"></script>
+
+</head>
+<body ng-controller="hiddenLabs">
+	
+	<!--if the page is long enough so it scrolls, this will make sure the background is still green-->
+	<div class="all">
+
+		<!--center-->
+		<div class="content">
+
+			<!--logout button-->
+			<div id = "login">
+					<a href=/logout>Logout</a>
+			</div>
+
+			<!--table with labs and their visibilty-->
+			<table style="width:100%;">
+				<tr>
+				<th>Lab Name</th>
+				<th>Visible?</th> 
+				</tr>
+				<tr ng-repeat="i in titles track by $index">
+				<td>{{titles[$index]}}</td>
+				<td><md-switch ng-model="visible[$index]" class="md-warn">{{visible[$index]}}</md-switch></td>
+				</tr>
+
+			</table>
+
+			<!--button to update the database-->
+			<div class="center">
+				<button ng-click="update()">Submit Changes</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

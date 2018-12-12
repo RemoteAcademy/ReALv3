@@ -1,0 +1,148 @@
+{
+	"_id" : ObjectId("5ad62f6c64eb9b29dcc1c3b7"),
+	"instructions" : [
+		"Do the experiment",
+		"Record results"
+	],
+	"title" : "Test 1",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5ad62f8564eb9b29dcc1c3b8"),
+	"instructions" : [
+		"nothing"
+	],
+	"title" : "Test 2",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5ad6373cfe76c724f432cb8b"),
+	"instructions" : [
+		"Step 1",
+		"Step 2"
+	],
+	"title" : "Experiment 3",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5ade9f8b8b3034539c380b4f"),
+	"instructions" : [
+		"whatever",
+		"something"
+	],
+	"title" : "test4",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adea0218b3034539c380b50"),
+	"instructions" : [
+		"w"
+	],
+	"title" : "test5",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adea25a1fee4f4a5c4d81bc"),
+	"instructions" : [
+		"step"
+	],
+	"title" : "Lab 6",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adea2e01fee4f4a5c4d81bd"),
+	"instructions" : [
+		"not"
+	],
+	"title" : "lab 7",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adea3878c2b6d52e042416c"),
+	"instructions" : [
+		"some step"
+	],
+	"title" : "Lab 10",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adead712d04dd51d0fea8e7"),
+	"instructions" : [
+		"Complete all labs before this",
+		"Complete this lab"
+	],
+	"title" : "Lab 11",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adeb8c5518b435e34f9e532"),
+	"instructions" : [
+		"sdfg"
+	],
+	"title" : "temp",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adebe69518b435e34f9e533"),
+	"instructions" : [
+		"Finish Prior labs",
+		"Finish this one"
+	],
+	"title" : "Lab 12",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5aded16cd642e015c02a0d6d"),
+	"instructions" : [
+		"Finish the First Step",
+		"Check your work",
+		"Move on to the next step",
+		"Repeat until no more steps"
+	],
+	"title" : "Test Lab",
+	"visible" : true,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5adf68b576f1934fd08e33da"),
+	"instructions" : [
+		"Finish",
+		"Every",
+		"Other",
+		"Lab"
+	],
+	"title" : "Final Lab",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5ae87f682ddae57b1060fc56"),
+	"instructions" : [
+		"1",
+		"2"
+	],
+	"title" : "Title here",
+	"visible" : false,
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5ae8ae356a93ba60740aee03"),
+	"instructions" : [
+		"step 1",
+		"step 2"
+	],
+	"title" : "This is a test",
+	"visible" : true,
+	"__v" : 0
+}

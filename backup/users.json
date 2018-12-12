@@ -1,0 +1,35 @@
+{
+	"_id" : ObjectId("5ade28934bc8c12e8ce79e04"),
+	"username" : "persap",
+	"admin" : true,
+	"mentor" : false,
+	"student" : false
+}
+{
+	"_id" : ObjectId("5ade28bc4bc8c12e8ce79e1d"),
+	"username" : "leafa",
+	"admin" : false,
+	"mentor" : false,
+	"student" : true
+}
+{
+	"_id" : ObjectId("5adeb6b50d32c94b8dc4e780"),
+	"username" : "student1",
+	"admin" : false,
+	"mentor" : false,
+	"student" : true
+}
+{
+	"_id" : ObjectId("5adeb6bd0d32c94b8dc4e797"),
+	"username" : "student2",
+	"admin" : false,
+	"mentor" : false,
+	"student" : true
+}
+{
+	"_id" : ObjectId("5adeb6d20d32c94b8dc4e7d8"),
+	"username" : "mentor1",
+	"admin" : false,
+	"mentor" : true,
+	"student" : false
+}
